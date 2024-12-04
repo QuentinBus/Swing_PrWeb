@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+
+<html lang="fr-fr">
+    <head>
+        <title>Users Page</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content=""with=device-with, initial-scale="1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="index2.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"> <a class="nav-link text-white" href="books.html"> Books </a> </li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="users.html"> Users </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div py-3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="">List of User</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="table-success title">
+                                    <tr >
+                                        <th scope="col">User #</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">BirthDate</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-striped table-bordered">
+                                    <tr>
+                                        <th scope="row">12</th>
+                                        <td>Quentin</td>
+                                        <td>Bussard</td>
+                                        <td>15/01/2002</td>
+                                        <td class="text-center">
+                                            <form action ="edit_user" method="POST">
+                                                <button class="btn btn-secondary">
+                                                    <img src="../img/edit.png" alt="edit" class="icon" />
+                                                </button>
+                                                <button class="btn btn-secondary">
+                                                    <img src="../img/bin.png" alt="delete" class="icon" />
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4"></td>
+                                        <td class="text-center">
+                                            <form action ="delete_user" method="POST">
+                                                <button class="btn btn-secondary">
+                                                    <img src="../img/plus.png" alt="add" class="icon" />
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

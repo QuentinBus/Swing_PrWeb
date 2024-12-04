@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+
+<html lang="fr-fr">
+    <head>
+        <title>book_borrowing_page</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content=""with=device-with, initial-scale="1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link href="index2.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div py-3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Borrowing page</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>FirstName : Quentin</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>LastName : Bussard</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped">
+                                <form action="edit_borrowing" method="POST">
+                                    <thead class="title">
+                                        <tr>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Return</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>21/09/2024</td>
+                                            <td>les deux tours</td>
+                                            <td>24/10/2024</td>
+                                        </tr>
+                                        <tr>
+                                            <td>24/10/2024</td>
+                                            <td>la huitième couleur</td>
+                                            <td>
+                                                <button type="submit" class="btn">
+                                                    <img src="../img/fleche.png" alt="return" class="icon" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <select class="form-select form-control" name=”livre”>
+                                                    <option value=”-1” selected=”selected”>-</option>
+                                                    <option value=”1”>Le hobbit</option>
+                                                    <option value=”2”>la horde du contrevent</option>
+                                                    <option value="3">H2G2</option>
+                                            </td>
+                                            <td>
+                                                <button type="submit" class="btn">
+                                                    <img src="../img/plus.png" alt="return" class="icon" />
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </form>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

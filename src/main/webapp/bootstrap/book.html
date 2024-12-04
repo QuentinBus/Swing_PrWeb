@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<html lang="fr-fr">
+    <head>
+        <title>book edit page</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content=""with=device-with, initial-scale="1">
+            <link rel="stylesheet" href="css/bootstrap.css">
+            <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+        <link href="index2.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div py-3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="">Create / Edit book page</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <form action ="edit_book" method="POST">
+                                    <tbody class="table-bordered">
+                                        <tr >
+                                            <th scope="row" class="title">book #</th>
+                                            <td>42</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="title">Title</th>
+                                            <td>
+                                                <input type="text" class="form-control" id="imput_title" placeholder="book title" name="imput_title"/></imput>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="title">Author</th>
+                                            <td>
+                                                <input type="text" class="form-control" id="imput_author" placeholder="author Name (F.LastName)" name="imput_Author" required="required"/></imput>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot class="table-bordered table-secondary">
+                                        <th colspan="2">
+                                            <button class="btn btn-block btn-success">Save</button>
+                                        </th>
+                                    </tfoot>
+                                </form>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

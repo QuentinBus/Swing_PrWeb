@@ -1,0 +1,10 @@
+.title{
+    background-color: forestgreen;
+    color: white;
+    border-color: forestgreen;
+}
+
+img.icon {
+display : inline;
+height : 20px;
+}
