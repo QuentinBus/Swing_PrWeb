@@ -21,14 +21,10 @@
     -->
     <mvc:annotation-driven/>
     <context:component-scan base-package="ei3.centrale.prweb.controllers"/>
-    <!--    <bean id="viewResolver"
-          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-          p:prefix="/WEB-INF/jsp/"
-          p:suffix=".jsp" />-->
     <bean id="viewResolver"
         class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-        p:prefix="bootstrap\"
-        p:suffix=".html" />
+        p:prefix="/WEB-INF/views/"
+        p:suffix=".jsp" />
     
 
 </beans>
